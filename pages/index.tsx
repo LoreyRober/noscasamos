@@ -12,11 +12,17 @@ export default function Home() {
                       content="width=device-width, initial-scale=1"/>
                 <link rel="icon"
                       href="/favicon.ico"/>
+                <link rel="preconnect"
+                      href="https://fonts.googleapis.com"/>
+                <link rel="preconnect"
+                      href="https://fonts.gstatic.com"/>
+                <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Jost:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+                      rel="stylesheet"/>
             </Head>
-            <main className="flex flex-col">
+            <main className="flex flex-col font-sans">
                 <NavigationHeader/>
-                <h1 className="text-3xl font-bold">
-                    Lore y Rober, Nos Casamos!
+                <h1 className="flex flex-col text-3xl font-fantasy">
+                    Lorena y Roberto
                 </h1>
             </main>
         </>

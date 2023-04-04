@@ -1,23 +1,57 @@
 import { useState } from 'react'
+import Image from 'next/image'
 
 export const NavigationHeader = (): JSX.Element => {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <header className="flex flex-row justify-between bg-black text-white">
-            <h1 className="py-4 px-6">
-                Lorena & Roberto
+        <header className="flex flex-row justify-between bg-black text-white pl-6 py-4">
+            <h1 className="flex font-normal text-sm leading-6">
+                <span className="pr-2">LORENA</span>
+                <Image priority
+                       src="/images/rings-white.svg"
+                       height={24}
+                       width={50}
+                       alt="Anillos entrelazados"/>
+                <span className="pl-2">ROBERTO</span>
             </h1>
-            <div className="flex flex-col py-4 px-6 relative">
-                <button onClick={() => setIsOpen(!isOpen)}>Aqui va el menu</button>
-                {isOpen && (
-                    <nav className="absolute top-10 w-full bg-black">
-                        <ul className="flex flex-col space-y-2">Option 1</ul>
-                        <ul className="flex flex-col space-y-2">Option 2</ul>
-                        <ul className="flex flex-col space-y-2">Option 3</ul>
-                        <ul className="flex flex-col space-y-2">Option 4</ul>
-                    </nav>
-                )}
+            <div className="flex flex-col w-3/5 items-end relative justify-end">
+                <button className="mr-6"
+                        onClick={() => setIsOpen(!isOpen)}>
+                    {isOpen ?
+                        <Image priority
+                               src="/images/icon_close.svg"
+                               height={24}
+                               width={24}
+                               alt="Anillos entrelazados"/> :
+                        <Image priority
+                               src="/images/burger-menu.svg"
+                               height={24}
+                               width={24}
+                               alt="Anillos entrelazados"/>
+
+                    }
+                </button>
+                <nav className={
+                    isOpen ?
+                        'absolute top-10 w-full h-screen bg-black transition duration-300 ease-out' :
+                        'absolute top-10 w-full h-screen bg-black transition duration-300 ease-out translate-x-full'}>
+                    <ul className="flex flex-col tracking-widest font-bold text-sm leading-6 space-y-2 px-4 py-6">
+                        ¡BIENVENIDOS!
+                    </ul>
+                    <ul className="flex flex-col tracking-widest text-sm leading-6 space-y-2 px-4 py-3">
+                        SOBRE NOSOTROS
+                    </ul>
+                    <ul className="flex flex-col tracking-widest text-sm leading-6 space-y-2 px-4 py-3">
+                        CONFIRMAR ASISTENCIA
+                    </ul>
+                    <ul className="flex flex-col tracking-widest text-sm leading-6 space-y-2 px-4 py-3">
+                        PIDE TUS TEMAZOS
+                    </ul>
+                    <ul className="flex flex-col tracking-widest text-sm leading-6 space-y-2 px-4 py-3">COMPARTE TUS
+                        FOTOS
+                    </ul>
+                </nav>
             </div>
         </header>
     )
