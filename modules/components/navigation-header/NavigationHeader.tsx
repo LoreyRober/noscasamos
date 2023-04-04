@@ -9,7 +9,7 @@ export const NavigationHeader = (): JSX.Element => {
             <h1 className="flex font-normal text-sm leading-6">
                 <span className="pr-2">LORENA</span>
                 <Image priority
-                       src="/icons/rings-white.svg"
+                       src="icons/rings-white.svg"
                        height={24}
                        width={50}
                        alt="Anillos entrelazados"/>
@@ -20,12 +20,12 @@ export const NavigationHeader = (): JSX.Element => {
                         onClick={() => setIsOpen(!isOpen)}>
                     {isOpen ?
                         <Image priority
-                               src="/icons/icon_close.svg"
+                               src="icons/icon_close.svg"
                                height={24}
                                width={24}
                                alt="Anillos entrelazados"/> :
                         <Image priority
-                               src="/icons/burger-menu.svg"
+                               src="icons/burger-menu.svg"
                                height={24}
                                width={24}
                                alt="Anillos entrelazados"/>
