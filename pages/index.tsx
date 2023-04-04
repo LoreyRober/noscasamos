@@ -1,4 +1,5 @@
 import { NavigationHeader } from '@/modules/components/navigation-header/NavigationHeader';
+import { Presentation } from '@/modules/components/presentation/Presentation';
 import Head from 'next/head'
 
 export default function Home() {
@@ -21,9 +22,7 @@ export default function Home() {
             </Head>
             <main className="flex flex-col font-sans">
                 <NavigationHeader/>
-                <h1 className="flex flex-col text-3xl font-fantasy">
-                    Lorena y Roberto
-                </h1>
+                <Presentation/>
             </main>
         </>
     )

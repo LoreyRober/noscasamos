@@ -9,7 +9,7 @@ export const NavigationHeader = (): JSX.Element => {
             <h1 className="flex font-normal text-sm leading-6">
                 <span className="pr-2">LORENA</span>
                 <Image priority
-                       src="/images/rings-white.svg"
+                       src="/icons/rings-white.svg"
                        height={24}
                        width={50}
                        alt="Anillos entrelazados"/>
@@ -20,12 +20,12 @@ export const NavigationHeader = (): JSX.Element => {
                         onClick={() => setIsOpen(!isOpen)}>
                     {isOpen ?
                         <Image priority
-                               src="/images/icon_close.svg"
+                               src="/icons/icon_close.svg"
                                height={24}
                                width={24}
                                alt="Anillos entrelazados"/> :
                         <Image priority
-                               src="/images/burger-menu.svg"
+                               src="/icons/burger-menu.svg"
                                height={24}
                                width={24}
                                alt="Anillos entrelazados"/>
@@ -34,22 +34,22 @@ export const NavigationHeader = (): JSX.Element => {
                 </button>
                 <nav className={
                     isOpen ?
-                        'absolute top-10 w-full h-screen bg-black transition duration-300 ease-out' :
-                        'absolute top-10 w-full h-screen bg-black transition duration-300 ease-out translate-x-full'}>
+                        'absolute z-10 top-10 w-full h-screen bg-black transition duration-300 ease-out' :
+                        'absolute z-10 top-10 w-full h-screen bg-black transition duration-300 ease-out translate-x-full'}>
                     <ul className="flex flex-col tracking-widest font-bold text-sm leading-6 space-y-2 px-4 py-6">
                         ¡BIENVENIDOS!
                     </ul>
-                    <ul className="flex flex-col tracking-widest text-sm leading-6 space-y-2 px-4 py-3">
+                    <ul className="flex flex-col tracking-widest text-sm leading-6 px-4 py-3">
                         SOBRE NOSOTROS
                     </ul>
-                    <ul className="flex flex-col tracking-widest text-sm leading-6 space-y-2 px-4 py-3">
+                    <ul className="flex flex-col tracking-widest text-sm leading-6 px-4 py-3">
                         CONFIRMAR ASISTENCIA
                     </ul>
-                    <ul className="flex flex-col tracking-widest text-sm leading-6 space-y-2 px-4 py-3">
+                    <ul className="flex flex-col tracking-widest text-sm leading-6 px-4 py-3">
                         PIDE TUS TEMAZOS
                     </ul>
-                    <ul className="flex flex-col tracking-widest text-sm leading-6 space-y-2 px-4 py-3">COMPARTE TUS
-                        FOTOS
+                    <ul className="flex flex-col tracking-widest text-sm leading-6 px-4 py-3">
+                        COMPARTE TUS FOTOS
                     </ul>
                 </nav>
             </div>
