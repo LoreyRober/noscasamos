@@ -1,3 +1,4 @@
+import { NavigationHeader } from '@/modules/components/navigation-header/NavigationHeader';
 import Head from 'next/head'
 
 export default function Home() {
@@ -12,11 +13,11 @@ export default function Home() {
                 <link rel="icon"
                       href="/favicon.ico"/>
             </Head>
-            <main className="flex flex-col items-center justify-center min-h-screen py-2">
-                <h1 className="text-3xl font-bold underline">
+            <main className="flex flex-col">
+                <NavigationHeader/>
+                <h1 className="text-3xl font-bold">
                     Lore y Rober, Nos Casamos!
                 </h1>
-                <p className="text-xl">Esto es simplemente una prueba para comprobar que github pages funciona</p>
             </main>
         </>
     )
