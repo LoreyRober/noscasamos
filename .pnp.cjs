@@ -38,6 +38,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["next", "virtual:eda71001a138cf47307c46f5c473807bb6297cac07715b9bfdfea747ea2705648dda772fd5ff40c66f15f0637e880d55ca91cb3b8d2d8b2b47a4df912e2e1497#npm:13.2.4"],\
             ["postcss", "npm:8.4.21"],\
             ["react", "npm:18.2.0"],\
+            ["react-countdown", "virtual:eda71001a138cf47307c46f5c473807bb6297cac07715b9bfdfea747ea2705648dda772fd5ff40c66f15f0637e880d55ca91cb3b8d2d8b2b47a4df912e2e1497#npm:2.3.5"],\
             ["react-dom", "virtual:eda71001a138cf47307c46f5c473807bb6297cac07715b9bfdfea747ea2705648dda772fd5ff40c66f15f0637e880d55ca91cb3b8d2d8b2b47a4df912e2e1497#npm:18.2.0"],\
             ["tailwindcss", "virtual:eda71001a138cf47307c46f5c473807bb6297cac07715b9bfdfea747ea2705648dda772fd5ff40c66f15f0637e880d55ca91cb3b8d2d8b2b47a4df912e2e1497#npm:3.3.1"],\
             ["typescript", "patch:typescript@npm%3A5.0.3#~builtin<compat/typescript>::version=5.0.3&hash=85af82"]\
@@ -3320,6 +3321,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["next", "virtual:eda71001a138cf47307c46f5c473807bb6297cac07715b9bfdfea747ea2705648dda772fd5ff40c66f15f0637e880d55ca91cb3b8d2d8b2b47a4df912e2e1497#npm:13.2.4"],\
             ["postcss", "npm:8.4.21"],\
             ["react", "npm:18.2.0"],\
+            ["react-countdown", "virtual:eda71001a138cf47307c46f5c473807bb6297cac07715b9bfdfea747ea2705648dda772fd5ff40c66f15f0637e880d55ca91cb3b8d2d8b2b47a4df912e2e1497#npm:2.3.5"],\
             ["react-dom", "virtual:eda71001a138cf47307c46f5c473807bb6297cac07715b9bfdfea747ea2705648dda772fd5ff40c66f15f0637e880d55ca91cb3b8d2d8b2b47a4df912e2e1497#npm:18.2.0"],\
             ["tailwindcss", "virtual:eda71001a138cf47307c46f5c473807bb6297cac07715b9bfdfea747ea2705648dda772fd5ff40c66f15f0637e880d55ca91cb3b8d2d8b2b47a4df912e2e1497#npm:3.3.1"],\
             ["typescript", "patch:typescript@npm%3A5.0.3#~builtin<compat/typescript>::version=5.0.3&hash=85af82"]\
@@ -3833,6 +3835,33 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["react", "npm:18.2.0"],\
             ["loose-envify", "npm:1.4.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["react-countdown", [\
+        ["npm:2.3.5", {\
+          "packageLocation": "./.yarn/cache/react-countdown-npm-2.3.5-6a618cfae3-24289f4059.zip/node_modules/react-countdown/",\
+          "packageDependencies": [\
+            ["react-countdown", "npm:2.3.5"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:eda71001a138cf47307c46f5c473807bb6297cac07715b9bfdfea747ea2705648dda772fd5ff40c66f15f0637e880d55ca91cb3b8d2d8b2b47a4df912e2e1497#npm:2.3.5", {\
+          "packageLocation": "./.yarn/__virtual__/react-countdown-virtual-261bc00c01/0/cache/react-countdown-npm-2.3.5-6a618cfae3-24289f4059.zip/node_modules/react-countdown/",\
+          "packageDependencies": [\
+            ["react-countdown", "virtual:eda71001a138cf47307c46f5c473807bb6297cac07715b9bfdfea747ea2705648dda772fd5ff40c66f15f0637e880d55ca91cb3b8d2d8b2b47a4df912e2e1497#npm:2.3.5"],\
+            ["@types/react", "npm:18.0.32"],\
+            ["@types/react-dom", "npm:18.0.11"],\
+            ["prop-types", "npm:15.8.1"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:eda71001a138cf47307c46f5c473807bb6297cac07715b9bfdfea747ea2705648dda772fd5ff40c66f15f0637e880d55ca91cb3b8d2d8b2b47a4df912e2e1497#npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react-dom",\
+            "@types/react",\
+            "react-dom",\
+            "react"\
           ],\
           "linkType": "HARD"\
         }]\

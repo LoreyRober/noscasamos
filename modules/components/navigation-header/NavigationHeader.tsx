@@ -35,7 +35,7 @@ export const NavigationHeader = (): JSX.Element => {
                 <nav className={
                     isOpen ?
                         'absolute z-10 top-10 w-full h-screen bg-black transition duration-300 ease-out' :
-                        'absolute z-10 top-10 w-full h-screen bg-black transition duration-300 ease-out translate-x-full'}>
+                        'absolute z-10 top-10 w-full h-screen bg-black transition duration-300 ease-out scale-x-0 translate-x-full'}>
                     <ul className="flex flex-col tracking-widest font-bold text-sm leading-6 space-y-2 px-4 py-6">
                         ¡BIENVENIDOS!
                     </ul>
