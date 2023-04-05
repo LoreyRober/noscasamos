@@ -6,7 +6,7 @@ const CountdownTimer = dynamic(() => import('@/modules/components/CountdownTimer
 export const Presentation = (): JSX.Element => {
     return (
         <section className="flex flex-col">
-            <div className="relative w-full pb-[90%]">
+            <div className="relative w-full pb-[100%] mt-6">
                 <Image priority
                        src={'images/couple-photo.svg'}
                        alt={'Imagen de Roberto y Lorena posando to rexulones'}

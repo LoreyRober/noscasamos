@@ -5,7 +5,7 @@ export const NavigationHeader = (): JSX.Element => {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <header className="flex flex-row justify-between bg-black text-white pl-6 py-4">
+        <header className="fixed z-10 w-full top-0 flex flex-row justify-between bg-black text-white pl-6 py-4">
             <h1 className="flex font-normal text-sm leading-6">
                 <span className="pr-2">LORENA</span>
                 <Image priority
@@ -34,9 +34,9 @@ export const NavigationHeader = (): JSX.Element => {
                 </button>
                 <nav className={
                     isOpen ?
-                        'absolute z-10 top-10 w-full h-screen bg-black transition duration-300 ease-out' :
-                        'fixed z-10 top-14 w-7/12 h-screen bg-black transition duration-300 ease-in scale-x-0 translate-x-full'}>
-                    <ul className="flex flex-col tracking-widest font-bold text-sm leading-6 space-y-2 px-4 py-6">
+                        'fixed z-10 top-14 w-2/3 h-full bg-black transition duration-300 ease-out' :
+                        'fixed z-10 top-14 w-2/3 h-full bg-black transition duration-300 ease-in scale-x-0 translate-x-full'}>
+                    <ul className="flex flex-col tracking-widest font-bold text-sm leading-6 px-4 py-6">
                         ¡BIENVENIDOS!
                     </ul>
                     <ul className="flex flex-col tracking-widest text-sm leading-6 px-4 py-3">
