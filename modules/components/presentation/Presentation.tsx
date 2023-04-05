@@ -10,7 +10,7 @@ export const Presentation = (): JSX.Element => {
                 <Image priority
                        src={'images/couple-photo.svg'}
                        alt={'Imagen de Roberto y Lorena posando to rexulones'}
-
+                       objectFit={'cover'}
                        fill/>
                 <div className="absolute bottom-[-28px] left-1/2 transform -translate-x-1/2">
                     <p className="tracking-widest leading-6 text-sm font-bold py-2">23 / 09 / 23</p>
@@ -35,7 +35,7 @@ export const Presentation = (): JSX.Element => {
                     CONFIRMAR ASISTENCIA
                 </button>
             </div>
-            <div className='flex flex-row justify-between items-center pt-[1%]'>
+            <div className='flex flex-row justify-between items-center'>
                 <Image src="images/flowers-left.svg"
                        alt="Flores de colores"
                        width={106}
