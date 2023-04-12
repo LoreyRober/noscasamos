@@ -28,6 +28,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@react-hook/media-query", "virtual:eda71001a138cf47307c46f5c473807bb6297cac07715b9bfdfea747ea2705648dda772fd5ff40c66f15f0637e880d55ca91cb3b8d2d8b2b47a4df912e2e1497#npm:1.1.1"],\
             ["@types/next", "npm:9.0.0"],\
             ["@types/node", "npm:18.15.11"],\
             ["@types/react", "npm:18.0.32"],\
@@ -354,6 +355,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["picocolors", "npm:1.0.0"],\
             ["tiny-glob", "npm:0.2.9"],\
             ["tslib", "npm:2.5.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@react-hook/media-query", [\
+        ["npm:1.1.1", {\
+          "packageLocation": "./.yarn/cache/@react-hook-media-query-npm-1.1.1-078cb34dd3-141d271789.zip/node_modules/@react-hook/media-query/",\
+          "packageDependencies": [\
+            ["@react-hook/media-query", "npm:1.1.1"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:eda71001a138cf47307c46f5c473807bb6297cac07715b9bfdfea747ea2705648dda772fd5ff40c66f15f0637e880d55ca91cb3b8d2d8b2b47a4df912e2e1497#npm:1.1.1", {\
+          "packageLocation": "./.yarn/__virtual__/@react-hook-media-query-virtual-5f8ece521a/0/cache/@react-hook-media-query-npm-1.1.1-078cb34dd3-141d271789.zip/node_modules/@react-hook/media-query/",\
+          "packageDependencies": [\
+            ["@react-hook/media-query", "virtual:eda71001a138cf47307c46f5c473807bb6297cac07715b9bfdfea747ea2705648dda772fd5ff40c66f15f0637e880d55ca91cb3b8d2d8b2b47a4df912e2e1497#npm:1.1.1"],\
+            ["@types/react", "npm:18.0.32"],\
+            ["react", "npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3311,6 +3334,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["noscasamos", "workspace:."],\
+            ["@react-hook/media-query", "virtual:eda71001a138cf47307c46f5c473807bb6297cac07715b9bfdfea747ea2705648dda772fd5ff40c66f15f0637e880d55ca91cb3b8d2d8b2b47a4df912e2e1497#npm:1.1.1"],\
             ["@types/next", "npm:9.0.0"],\
             ["@types/node", "npm:18.15.11"],\
             ["@types/react", "npm:18.0.32"],\

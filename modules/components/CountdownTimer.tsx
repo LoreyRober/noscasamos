@@ -14,12 +14,11 @@ interface RendererProps {
 }
 
 const CountdownTimer = ({ date }: Props) => {
-
     const renderer = ({ days, hours, minutes, seconds, completed }: RendererProps) => {
 
         if (completed) {
             return (
-                <p className="flex flex-row gap-2 justify-center tracking-widest text-sm leading-6 py-4">
+                <p className="flex flex-row gap-2 justify-center tracking-widest text-sm leading-6 py-4 lg:py-0">
                     ¡La boda ha comenzado!</p>
             )
         } else {
