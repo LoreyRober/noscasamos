@@ -42,8 +42,6 @@ const Index = (): JSX.Element => {
             suggestions: event?.target?.suggestions?.value ?? null
         }
 
-        console.log({ data })
-
         await addGuest(data).
             then(() => {}).
             catch(e => {
