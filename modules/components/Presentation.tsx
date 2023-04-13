@@ -1,5 +1,6 @@
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useMediaQuery } from '@react-hook/media-query';
 
 const CountdownTimer = dynamic(() => import('@/modules/components/CountdownTimer'), { ssr: false });
@@ -56,9 +57,9 @@ export const Presentation = (): JSX.Element => {
                         <CountdownTimer date={new Date('2023-09-23T12:30:00')}/>
                     </div>
                     <div className="flex flex-col items-center p-10 relative lg:pt-12">
-                        <button className="flex flex-col items-center tracking-widest text-sm text-white leading-6 p-4 bg-primary-brown">
+                        <Link href="/confirmation" className="flex flex-col items-center tracking-widest text-sm text-white leading-6 p-4 bg-primary-brown">
                             CONFIRMAR ASISTENCIA
-                        </button>
+                        </Link>
                         {isMobile && (
                         <div className="flex flex-row justify-between items-center absolute w-full">
                             <Image src="images/flowers-left.svg"

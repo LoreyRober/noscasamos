@@ -1,6 +1,7 @@
 import { useMediaQuery } from '@react-hook/media-query';
-import { SyntheticEvent, useEffect, useRef, useState } from 'react'
-import Image from 'next/image'
+import { SyntheticEvent, useEffect, useRef, useState } from 'react';
+import Link from 'next/link'
+import Image from 'next/image';
 
 export const NavigationHeader = (): JSX.Element => {
     const [isOpen, setIsOpen] = useState(false)
@@ -33,14 +34,16 @@ export const NavigationHeader = (): JSX.Element => {
     return (
         <header className="fixed z-20 w-full top-0 flex flex-row justify-center bg-black text-white pl-6 py-4 lg:px-20">
             <div className="flex w-full flex-row justify-between max-w-5xl">
-                <h1 className="flex font-normal text-sm leading-6">
-                    <span className="pr-2">LORENA</span>
-                    <Image priority
-                           src="icons/rings-white.svg"
-                           height={24}
-                           width={50}
-                           alt="Anillos entrelazados"/>
-                    <span className="pl-2">ROBERTO</span>
+                <h1>
+                    <Link href="/" className="flex font-normal text-sm leading-6">
+                        <span className="pr-2">LORENA</span>
+                        <Image priority
+                               src="icons/rings-white.svg"
+                               height={24}
+                               width={50}
+                               alt="Anillos entrelazados"/>
+                        <span className="pl-2">ROBERTO</span>
+                    </Link>
                 </h1>
                 { isMobile ? (
                         <div ref={dropdownRef}
@@ -67,30 +70,30 @@ export const NavigationHeader = (): JSX.Element => {
                                     'fixed z-10 top-14 w-2/3 h-full bg-black transition duration-300 ease-out' :
                                     'fixed z-10 top-14 w-2/3 h-full bg-black transition duration-300 ease-in scale-x-0 translate-x-full'}>
                                 <div className="flex flex-col tracking-widest font-bold text-sm leading-6 px-4 py-6">
-                                    <a href="">¡BIENVENIDOS!</a>
+                                    <Link href="/">¡BIENVENIDOS!</Link>
                                 </div>
                                 <div className="flex flex-col tracking-widest text-sm leading-6 px-4 py-3">
-                                    <a href="">SOBRE NOSOTROS</a>
+                                    <Link href="">SOBRE NOSOTROS</Link>
                                 </div>
                                 <div className="flex flex-col tracking-widest text-sm leading-6 px-4 py-3">
-                                    <a href="">CONFIRMAR ASISTENCIA</a>
+                                    <Link href="/confirmation">CONFIRMAR ASISTENCIA</Link>
                                 </div>
                                 <div className="flex flex-col tracking-widest text-sm leading-6 px-4 py-3">
-                                    <a href="">PIDE TUS TEMAZOS</a>
+                                    <Link href="">PIDE TUS TEMAZOS</Link>
                                 </div>
                                 {/*<div className="flex flex-col tracking-widest text-sm leading-6 px-4 py-3">*/}
-                                {/*    <a href="">COMPARTE TUS FOTOS</a>*/}
+                                {/*    <Link href="">COMPARTE TUS FOTOS</Link>*/}
                                 {/*</div>*/}
                             </nav>
                         </div>
                     ) :
                     (
                         <nav className="flex space-x-6 leading-6 text-sm text-white">
-                                <a href="" className="font-bold">¡BIENVENIDOS!</a>
-                                <a href="">SOBRE NOSOTROS</a>
-                                <a href="">CONFIRMAR ASISTENCIA</a>
-                                <a href="">PIDE TUS TEMAZOS</a>
-                                {/*<a href="">COMPARTE TUS FOTOS</a>*/}
+                                <Link href="/" className="font-bold">¡BIENVENIDOS!</Link>
+                                <Link href="">SOBRE NOSOTROS</Link>
+                                <Link href="/confirmation">CONFIRMAR ASISTENCIA</Link>
+                                <Link href="">PIDE TUS TEMAZOS</Link>
+                                {/*<Link href="">COMPARTE TUS FOTOS</Link>*/}
                         </nav>
                     )}
             </div>

@@ -1,4 +1,5 @@
 import { Footer } from '@/modules/components/Footer';
+import { NavigationHeader } from '@/modules/components/NavigationHeader';
 import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
@@ -13,6 +14,7 @@ export default function Document() {
                   rel="stylesheet"/>
             </Head>
             <body>
+
             <Main />
             <NextScript/>
             <Footer/>
