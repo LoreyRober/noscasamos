@@ -1,7 +1,13 @@
 import { useMediaQuery } from '@react-hook/media-query';
+import { useEffect, useState } from 'react';
 
 export const WelcomeTextCard = (): JSX.Element => {
-    const isMobile = useMediaQuery('(max-width: 1023px)');
+    const [isMobile, setIsMobile] = useState(false);
+    const hasArrivedToMaxWith = useMediaQuery('(max-width: 1023px)');
+
+    useEffect(() => {
+        setIsMobile(hasArrivedToMaxWith);
+    }, [hasArrivedToMaxWith])
 
     return (
         <div className="flex flex-col items-center p-10 lg:py-12 bg-white">

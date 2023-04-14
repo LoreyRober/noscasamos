@@ -2,11 +2,17 @@ import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useMediaQuery } from '@react-hook/media-query';
+import { useEffect, useState } from 'react';
 
 const CountdownTimer = dynamic(() => import('@/modules/components/CountdownTimer'), { ssr: false });
 
 export const Presentation = (): JSX.Element => {
-    const isMobile = useMediaQuery("(max-width: 1023px)");
+    const [isMobile, setIsMobile] = useState(false);
+    const hasArrivedToMaxWith = useMediaQuery("(max-width: 1023px)");
+
+    useEffect(() => {
+        setIsMobile(hasArrivedToMaxWith);
+    }, [hasArrivedToMaxWith])
 
     return (
         <section className="flex flex-col lg:items-center lg:flex-row w-full">

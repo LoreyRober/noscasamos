@@ -6,8 +6,9 @@ import Image from 'next/image';
 export const NavigationHeader = (): JSX.Element => {
     const [isOpen, setIsOpen] = useState(false)
     const [isAnimating, setIsAnimating] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
     const dropdownRef = useRef<HTMLDivElement>(null);
-    const isMobile = useMediaQuery("(max-width: 1023px)");
+    const hasArrivedToMaxWith = useMediaQuery("(max-width: 1023px)");
 
     const handleClick = (event: SyntheticEvent) => {
         event.preventDefault();
@@ -15,6 +16,10 @@ export const NavigationHeader = (): JSX.Element => {
         setIsAnimating(true);
         setTimeout(() => setIsAnimating(false), 300);
     }
+
+    useEffect(() => {
+        setIsMobile(hasArrivedToMaxWith);
+    }, [hasArrivedToMaxWith])
 
     useEffect(() => {
         if (!isOpen) return;
@@ -55,12 +60,12 @@ export const NavigationHeader = (): JSX.Element => {
                                     <Image priority
                                            src={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}icons/icon_close.svg`}
                                            height={24}
-                                           width={24}
+                                           width={25}
                                            alt="Anillos entrelazados"/> :
                                     <Image priority
                                            src={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}icons/burger-menu.svg`}
                                            height={24}
-                                           width={24}
+                                           width={25}
                                            alt="Anillos entrelazados"/>
 
                                 }
