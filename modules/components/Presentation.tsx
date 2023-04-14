@@ -59,7 +59,7 @@ export const Presentation = (): JSX.Element => {
                         <CountdownTimer date={new Date('2023-09-23T12:30:00')}/>
                     </div>
                     <div className="flex flex-col items-center p-10 relative lg:pt-12">
-                        <Link href="/confirmation" className="flex flex-col items-center tracking-widest text-sm text-white leading-6 p-4 bg-primary-brown">
+                        <Link href="/confirmation" className="flex flex-col items-center tracking-widest text-sm text-white leading-6 p-4 bg-primary-brown z-10">
                             CONFIRMAR ASISTENCIA
                         </Link>
                         {isMobile && (
