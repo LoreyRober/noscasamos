@@ -14,18 +14,26 @@ export const Presentation = (): JSX.Element => {
             { isMobile ? (
 
                     <Image priority
-                           src={'/images/couple-image.svg'}
+                           src={'/public/images/couple-image.svg'}
                            alt={'Imagen de Roberto y Lorena posando to rexulones'}
                            style={{ objectFit: 'cover' }}
                            fill
                            />
             ) : (
+                <>
+                    {/*<div className='flex flex-col items-center bg-white'*/}
+                    {/*    style={{*/}
+                    {/*        backgroundImage: `url(${bg.src})`,*/}
+                    {/*        backgroundRepeat: 'repeat',*/}
+                    {/*    }}*/}
 
+                    {/*></div>*/}
                     <Image priority
                            src={'/images/couple-image-large.svg'}
                            alt={'Imagen de Roberto y Lorena posando to rexulones'}
                            style={{ objectFit: 'cover' }}
                            fill/>
+                </>
                 )}
             </div>
             <div className='w-full bg-white lg:py-[219px] lg:bg-white-with-opacity'>
