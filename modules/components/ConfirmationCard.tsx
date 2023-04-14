@@ -10,7 +10,7 @@ export const ConfirmationCard = (): JSX.Element => {
           </Link>
           <Image priority
                  className='pt-7 pb-10 lg:pt-10 lg:pb-20'
-                 src="images/envelope.svg"
+                 src="/images/envelope.svg"
                  height={92}
                  width={76}
                  alt="Anillos entrelazados"/>

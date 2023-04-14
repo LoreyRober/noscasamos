@@ -68,7 +68,7 @@ const Index = (): JSX.Element => {
             <NavigationHeader/>
             <header className="flex flex-col items-center w-full mt-14 pt-6">
                 <Image priority
-                       src="images/date-rings-large.svg"
+                       src="/images/date-rings-large.svg"
                        height={108}
                        width={150}
                        alt="Anillos entrelazados"/>
