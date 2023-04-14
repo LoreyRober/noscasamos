@@ -14,22 +14,15 @@ export const Presentation = (): JSX.Element => {
             { isMobile ? (
 
                     <Image priority
-                           src={'/public/images/couple-image.svg'}
+                           src={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}images/couple-image.svg`}
                            alt={'Imagen de Roberto y Lorena posando to rexulones'}
                            style={{ objectFit: 'cover' }}
                            fill
                            />
             ) : (
                 <>
-                    {/*<div className='flex flex-col items-center bg-white'*/}
-                    {/*    style={{*/}
-                    {/*        backgroundImage: `url(${bg.src})`,*/}
-                    {/*        backgroundRepeat: 'repeat',*/}
-                    {/*    }}*/}
-
-                    {/*></div>*/}
                     <Image priority
-                           src={'/images/couple-image-large.svg'}
+                           src={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}images/couple-image-large.svg`}
                            alt={'Imagen de Roberto y Lorena posando to rexulones'}
                            style={{ objectFit: 'cover' }}
                            fill/>
@@ -42,13 +35,13 @@ export const Presentation = (): JSX.Element => {
                     lg:static lg:-translate-x-0 lg:flex lg:justify-center">
                         {isMobile ? (
                             <Image priority
-                                   src="/images/date-rings.svg"
+                                   src={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}images/date-rings.svg`}
                                    height={180}
                                    width={180}
                                    alt="Anillos entrelazados"/>
                         ) : (
                             <Image priority
-                                   src="/images/date-rings-large.svg"
+                                   src={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}images/date-rings-large.svg`}
                                    height={108}
                                    width={150}
                                    alt="Anillos entrelazados"/>
@@ -71,11 +64,11 @@ export const Presentation = (): JSX.Element => {
                         </Link>
                         {isMobile && (
                         <div className="flex flex-row justify-between items-center absolute w-full">
-                            <Image src="/images/flowers-left.svg"
+                            <Image src={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}images/flowers-left.svg`}
                                    alt="Flores de colores"
                                    width={106}
                                    height={163}/>
-                            <Image src="/images/flowers-right.svg"
+                            <Image src={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}images/flowers-right.svg`}
                                  alt="Flores de colores"
                                  width={88}
                                  height={159}/>

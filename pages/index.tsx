@@ -30,7 +30,7 @@ export default function Home() {
                         <WelcomeTextCard/>
                         <div className='w-full flex flex-col lg:flex-row'>
                             <ImageCard
-                                imageSrc='/images/castle.svg'
+                                imageSrc={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}images/castle.svg`}
                                 srcUrl='https://goo.gl/maps/iYprQ1yiyiREbPYi9'
                                 imageAlt='Imagen del castillo de bellver, donde nos casamos'
                                 title='LA CEREMONIA'

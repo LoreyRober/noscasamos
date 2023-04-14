@@ -7,7 +7,7 @@ export const Footer = (): JSX.Element => {
                 <p className="flex flex-row justify-center tracking-widest text-sm leading-6">
                     <span className="pr-2">LORENA</span>
                     <Image priority
-                           src="/icons/rings-white.svg"
+                           src={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}icons/rings-white.svg`}
                            height={24}
                            width={50}
                            alt="Anillos entrelazados"/>
