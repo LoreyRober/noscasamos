@@ -47,7 +47,11 @@ const Index = (): JSX.Element => {
 
         await addGuest(data).
             then(() => {
-                router.push('/attendance-confirmation')
+                if (isComing) {
+                    router.push('/attendance-confirmation')
+                } else {
+                    router.push('/attendance-rejection')
+                }
             }).
             catch(e => {
                 setHasSubmit(false)
