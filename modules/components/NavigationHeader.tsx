@@ -78,7 +78,7 @@ export const NavigationHeader = (): JSX.Element => {
                                     <Link href="/">¡BIENVENIDOS!</Link>
                                 </div>
                                 <div className="flex flex-col tracking-widest text-sm leading-6 px-4 py-3">
-                                    <Link href="">SOBRE NOSOTROS</Link>
+                                    <Link href="/about-us">SOBRE NOSOTROS</Link>
                                 </div>
                                 <div className="flex flex-col tracking-widest text-sm leading-6 px-4 py-3">
                                     <Link href="/confirmation">CONFIRMAR ASISTENCIA</Link>
@@ -95,7 +95,7 @@ export const NavigationHeader = (): JSX.Element => {
                     (
                         <nav className="flex space-x-6 leading-6 text-sm text-white">
                                 <Link href="/" className="font-bold">¡BIENVENIDOS!</Link>
-                                <Link href="">SOBRE NOSOTROS</Link>
+                                <Link href="/about-us">SOBRE NOSOTROS</Link>
                                 <Link href="/confirmation">CONFIRMAR ASISTENCIA</Link>
                                 <Link href="">PIDE TUS TEMAZOS</Link>
                                 {/*<Link href="">COMPARTE TUS FOTOS</Link>*/}

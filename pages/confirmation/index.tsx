@@ -1,6 +1,6 @@
 import { addGuest, Guest } from '@/firebase/client';
+import HeaderImage from '@/modules/components/HeaderImage';
 import { NavigationHeader } from '@/modules/components/NavigationHeader';
-import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import bg from '@/public/images/tile-background.png';
 
@@ -70,22 +70,17 @@ const Index = (): JSX.Element => {
             backgroundRepeat: 'repeat',
         }}>
             <NavigationHeader/>
-            <header className="flex bg-white flex-col  m-auto items-center w-full max-w-5xl mt-14 pt-6">
-                <Image priority
-                       src={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}images/date-rings-large.svg`}
-                       height={108}
-                       width={150}
-                       alt="Anillos entrelazados"/>
-                <p className="tracking-widest leading-6 pt-6">
-                    ¿Nos acompañas o te lo pierdes?
-                </p>
-            </header>
+            <HeaderImage imageSrc={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}images/date-rings-large.svg`}
+                         imageAlt={'Anillos entrelazados'}
+                         text={'¿Nos acompañas o te lo pierdes?'}
+                         height={108}
+                         width={150}/>
             <form className="flex bg-white  flex-col m-auto pt-10 px-6 max-w-5xl lg:px-44"
                   method="post"
                   onSubmit={handleOnSubmit}>
                 <h2 className="tracking-widest leading-6">DÉJANOS TUS DATOS</h2>
                 <label className='text-sm text-primary-brown pt-4' htmlFor="name">Nombre y apellidos</label>
-                <input className='bg-light-grey border border-primary-grey text-sm italic text-primary-grey p-3 mt-2'
+                <input className='bg-light-grey border border-primary-grey text-sm italic p-3 mt-2'
                        type="text"
                        id="name"
                        name="name"
@@ -136,7 +131,7 @@ const Index = (): JSX.Element => {
                     </fieldset>
                     {hasCompanions && (<>
                         <label className='text-sm text-primary-brown pt-8' htmlFor="companionsNumber">¿Cuánta gente vendra contigo?</label>
-                        <select className='bg-light-grey border border-primary-grey text-sm italic text-primary-grey p-3 mt-2'
+                        <select className='bg-light-grey border border-primary-grey text-sm italic p-3 mt-2'
                                 id="companionsNumber"
                                 name="companionsNumber"
                                 onChange={handleNumberOfCompanions}
@@ -155,7 +150,7 @@ const Index = (): JSX.Element => {
                             <div className='pt-8' key={`companionName${index}`}>
                                 <label className='text-sm text-primary-brown' htmlFor={`companionName${index}`}>Nombre y apellidos del {companion} acompañante
                                 </label>
-                                <input className='bg-light-grey w-full border border-primary-grey text-sm italic text-primary-grey p-3 mt-2'
+                                <input className='bg-light-grey w-full border border-primary-grey text-sm italic p-3 mt-2'
                                        type="text"
                                        required={hasCompanions}
                                        id={`companionName${index}`}
@@ -166,7 +161,7 @@ const Index = (): JSX.Element => {
                             <div className='pt-8'>
                                 <label className='text-sm text-primary-brown' htmlFor={`companionName0`}>Nombre y apellidos del acompañante
                                 </label>
-                                <input className='bg-light-grey w-full border border-primary-grey text-sm italic text-primary-grey p-3 mt-2'
+                                <input className='bg-light-grey w-full border border-primary-grey text-sm italic p-3 mt-2'
                                        type="text"
                                        required={hasCompanions}
                                        id={`companionName0`}
@@ -181,7 +176,7 @@ const Index = (): JSX.Element => {
                     <label className='text-sm text-dark-grey pt-4' htmlFor="suggestions">¿Tienes alergias? ¿Eres vegano? ¿Prefieres un menú infantil?... Déjanos
                         aquí un comentario para tenerlo en cuenta
                     </label>
-                    <textarea className="bg-light-grey border border-primary-grey text-sm italic text-primary-grey p-3 mt-2"
+                    <textarea className="bg-light-grey border border-primary-grey text-sm italic p-3 mt-2"
                               id="suggestions"
                               name="suggestions"
                               rows={4}

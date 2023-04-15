@@ -36,7 +36,7 @@ export default function Home() {
                                 title='LA CEREMONIA'
                                 subtitle='12:30 - Castillo de Bellver'/>
                             <ImageCard
-                                imageSrc='/images/Lume.svg'
+                                imageSrc={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}images/Lume.svg`}
                                 srcUrl='https://goo.gl/maps/s7af1x5Bcmf6YjV88'
                                 imageAlt='Imagen del Lume, donde celebramos el banquete'
                                 title='LA FIESTA'
