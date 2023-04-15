@@ -21,7 +21,7 @@ const Index = () => {
             backgroundRepeat: 'repeat'
         }}>
             <NavigationHeader/>
-            <div className="min-h-[calc(100vh-112px)] max-w-5xl m-auto bg-white lg:text-base">
+            <div className="min-h-[calc(100vh-168px)] lg:min-h-[calc(100vh-112px)] max-w-5xl m-auto bg-white lg:text-base px-6">
                 <div className="lg:pt-14">
                     <HeaderImage imageSrc={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}images/flower.svg`}
                                  imageAlt={'Imagen de una flor'}
@@ -37,7 +37,7 @@ const Index = () => {
                     ¿Qué te gustaría que sonara en la pista de baile?
                 </p>
                 <div className="flex flex-col items-center w-full bg-white max-w-5xl m-auto pt-10">
-                    <Link href="/confirmation"
+                    <Link href="/songs"
                           className="font-bold tracking-widest text-sm leading-6 bg-primary-brown text-white p-4"> SUGERIR
                         TEMAZOS </Link>
                 </div>

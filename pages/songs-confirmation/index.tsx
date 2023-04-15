@@ -19,7 +19,7 @@ const Index = () => {
             backgroundRepeat: 'repeat'
         }}>
             <NavigationHeader/>
-            <div className="min-h-[calc(100vh-112px)] max-w-5xl m-auto bg-white lg:text-base">
+            <div className="min-h-[calc(100vh-168px)] lg:min-h-[calc(100vh-112px)] max-w-5xl m-auto bg-white lg:text-base px-6">
                 <div className="lg:pt-14">
                     <HeaderImage imageSrc={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}images/flower.svg`}
                                  imageAlt={'Imagen de una flor'}
