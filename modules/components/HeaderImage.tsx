@@ -16,7 +16,7 @@ const HeaderImage = ({ imageSrc, imageAlt, text, height, width}: Props) => {
                    height={height}
                    width={width}
                    alt={imageAlt}/>
-            <p className="tracking-widest leading-6 pt-6 lg:text-lg">
+            <p className="tracking-widest leading-6 pt-6 lg:text-lg lg:pt-10">
                 {text}
             </p>
         </header>

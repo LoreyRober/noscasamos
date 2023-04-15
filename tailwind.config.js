@@ -11,9 +11,10 @@ module.exports = {
         'white-with-opacity': 'rgba(255, 252, 249, .7)',
         'black': '#1F1F1F',
         'primary-brown': '#734D37',
+        'light-brown': '#FCF3EB',
         'dark-grey': '#828894',
         'primary-grey': '#DDDDDD',
-        'light-grey': '#FAFAFA'
+        'light-grey': '#FAFAFA',
       }
     },
     fontFamily: {

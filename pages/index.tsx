@@ -23,7 +23,7 @@ export default function Home() {
                 backgroundImage: `url(${bg.src})`,
                 backgroundRepeat: 'repeat',
             }}>
-                <main className='flex flex-col '>
+                <main className='flex flex-col'>
                     <div className="flex flex-col items-center font-sans max-w-5xl">
                         <NavigationHeader/>
                         <Presentation/>
