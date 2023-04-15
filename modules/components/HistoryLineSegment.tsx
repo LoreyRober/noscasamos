@@ -10,12 +10,12 @@ interface Props {
 
 const HistoryLineSegment = ({ imageSrc, imageAlt, text, date, textPosition }: Props) => {
     return (
-        <div className={`${textPosition === 'left' ? 'justify-end' : 'pl-[75px]'} flex flex-row items-center bg-white w-full pt-6`}>
+        <div className={`${textPosition === 'left' ? 'justify-end' : 'pl-[75px] lg:pl-[111px]'} flex flex-row items-center bg-white w-full pt-6`}>
             <div className={`${textPosition === 'left' ? 'flex flex-col items-end order-first pr-5 ' : 'order-last pl-5'}`}>
-                <p className="text-sm tracking-widest leading-6 font-bold">
+                <p className="text-sm tracking-widest leading-6 font-bold lg:text-base">
                     {text}
                 </p>
-                <p className="text-xs tracking-widest leading-6">
+                <p className="text-xs tracking-widest leading-6 lg:text-sm">
                     {date}
                 </p>
             </div>

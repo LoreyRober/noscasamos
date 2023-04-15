@@ -2,9 +2,11 @@ import { addGuest, Guest } from '@/firebase/client';
 import HeaderImage from '@/modules/components/HeaderImage';
 import { NavigationHeader } from '@/modules/components/NavigationHeader';
 import React, { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 import bg from '@/public/images/tile-background.png';
 
 const Index = (): JSX.Element => {
+    const router = useRouter()
     const [isComing, setIsComing] = useState(false);
     const [hasCompanions, setHasCompanions] = useState(false);
     const [numberOfCompanions, setNumberOfCompanions] = useState(0);
@@ -44,7 +46,9 @@ const Index = (): JSX.Element => {
         }
 
         await addGuest(data).
-            then(() => {}).
+            then(() => {
+                router.push('/attendance-confirmation')
+            }).
             catch(e => {
                 setHasSubmit(false)
                 console.log(e)
@@ -70,6 +74,7 @@ const Index = (): JSX.Element => {
             backgroundRepeat: 'repeat',
         }}>
             <NavigationHeader/>
+            <div className='min-h-[83vh] max-w-5xl m-auto bg-white'>
             <HeaderImage imageSrc={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}images/date-rings-large.svg`}
                          imageAlt={'Anillos entrelazados'}
                          text={'¿Nos acompañas o te lo pierdes?'}
@@ -190,6 +195,7 @@ const Index = (): JSX.Element => {
                 </button>
                 </div>
             </form>
+            </div>
         </div>
     )
 }

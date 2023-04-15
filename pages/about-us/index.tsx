@@ -34,7 +34,7 @@ const Index = () => {
                 </div>
             </div>
             <div className="max-w-5xl m-auto bg-white">
-                <div className="w-[330px] m-auto">
+                <div className="w-[330px] m-auto lg:w-[400px]">
                     <HistoryLineSegment imageSrc={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}images/meet.svg`}
                                         imageAlt={'Nosotros de jovenes'}
                                         text={'NOS CONOCEMOS'}
@@ -67,12 +67,12 @@ const Index = () => {
                                         textPosition={'right'}/>
                 </div>
             </div>
-            <p className="flex flex-col items-center text-center bg-white text-s tracking-widest px-6 pt-16 max-w-5xl m-auto">¡Acompáñanos
+            <p className="text-center bg-white text-sm tracking-widest px-6 pt-16 max-w-5xl m-auto">¡Acompáñanos
                 en el siguiente gran evento de nuestras vidas!
             </p>
             <div className="flex flex-col items-center w-full bg-white max-w-5xl m-auto">
                 <Link href="/confirmation"
-                      className="p-4 mt-9 font-bold tracking-widest text-sm leading-6 bg-primary-brown text-white lg:mt-20"> CONFIRMAR
+                      className="p-4 mt-9 font-bold tracking-widest text-sm leading-6 bg-primary-brown text-white"> CONFIRMAR
                     ASISTENCIA </Link>
             </div>
             <div className="flex flex-col items-center w-full bg-white pt-10 pb-12 max-w-5xl m-auto">
