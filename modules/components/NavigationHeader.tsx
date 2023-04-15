@@ -1,9 +1,11 @@
 import { useMediaQuery } from '@react-hook/media-query';
+import { useRouter } from 'next/router';
 import { SyntheticEvent, useEffect, useRef, useState } from 'react';
 import Link from 'next/link'
 import Image from 'next/image';
 
 export const NavigationHeader = (): JSX.Element => {
+    const router = useRouter();
     const [isOpen, setIsOpen] = useState(false)
     const [isAnimating, setIsAnimating] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
@@ -74,19 +76,19 @@ export const NavigationHeader = (): JSX.Element => {
                                 isOpen ?
                                     'fixed z-10 top-14 w-2/3 h-full bg-black transition duration-300 ease-out' :
                                     'fixed z-10 top-14 w-2/3 h-full bg-black transition duration-300 ease-in scale-x-0 translate-x-full'}>
-                                <div className="flex flex-col tracking-widest font-bold text-sm leading-6 px-4 py-6">
+                                <div className={`flex flex-col tracking-widest text-sm leading-6 px-4 pt-10 ${router.pathname === '/' && 'font-bold underline'}`}>
                                     <Link href="/">¡BIENVENIDOS!</Link>
                                 </div>
-                                <div className="flex flex-col tracking-widest text-sm leading-6 px-4 py-3">
+                                <div className={`flex flex-col tracking-widest text-sm leading-6 px-4 pt-6 ${router.pathname === '/about-us' && 'font-bold underline'}`}>
                                     <Link href="/about-us">SOBRE NOSOTROS</Link>
                                 </div>
-                                <div className="flex flex-col tracking-widest text-sm leading-6 px-4 py-3">
+                                <div className={`flex flex-col tracking-widest text-sm leading-6 px-4 pt-6 ${router.pathname === '/confirmation' && 'font-bold underline'}`}>
                                     <Link href="/confirmation">CONFIRMAR ASISTENCIA</Link>
                                 </div>
-                                <div className="flex flex-col tracking-widest text-sm leading-6 px-4 py-3">
-                                    <Link href="">PIDE TUS TEMAZOS</Link>
+                                <div className={`flex flex-col tracking-widest text-sm leading-6 px-4 pt-6 ${router.pathname === '/songs' && 'font-bold underline'}`}>
+                                    <Link href="/songs">PIDE TUS TEMAZOS</Link>
                                 </div>
-                                {/*<div className="flex flex-col tracking-widest text-sm leading-6 px-4 py-3">*/}
+                                {/*<div className={`flex flex-col tracking-widest text-sm leading-6 px-4 pt-6 ${router.pathname === '/songs' && 'font-bold underline'}`>*/}
                                 {/*    <Link href="">COMPARTE TUS FOTOS</Link>*/}
                                 {/*</div>*/}
                             </nav>
@@ -94,10 +96,10 @@ export const NavigationHeader = (): JSX.Element => {
                     ) :
                     (
                         <nav className="flex space-x-6 leading-6 text-sm text-white">
-                                <Link href="/" className="font-bold">¡BIENVENIDOS!</Link>
-                                <Link href="/about-us">SOBRE NOSOTROS</Link>
-                                <Link href="/confirmation">CONFIRMAR ASISTENCIA</Link>
-                                <Link href="">PIDE TUS TEMAZOS</Link>
+                                <Link href="/" className={`${router.pathname === '/' && 'font-bold underline'}`}>¡BIENVENIDOS!</Link>
+                                <Link href="/about-us" className={`${router.pathname === '/about-us' && 'font-bold underline'}`}>SOBRE NOSOTROS</Link>
+                                <Link href="/confirmation" className={`${router.pathname === '/confirmation' && 'font-bold underline'}`}>CONFIRMAR ASISTENCIA</Link>
+                                <Link href="/songs" className={`${router.pathname === '/songs' && 'font-bold underline'}`}>PIDE TUS TEMAZOS</Link>
                                 {/*<Link href="">COMPARTE TUS FOTOS</Link>*/}
                         </nav>
                     )}
