@@ -20,7 +20,8 @@ const HistoryLineSegment = ({ imageSrc, imageAlt, text, date, textPosition }: Pr
                 </p>
             </div>
             <div className={`${textPosition === 'left' ? 'w-[48%]' : ' flex flex-col items-end'} z-10`}>
-                <Image src={imageSrc}
+                <Image
+                       src={imageSrc}
                        alt={imageAlt}
                        width={80}
                        height={80}/>

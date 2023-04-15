@@ -19,14 +19,14 @@ const Index = () => {
                          width={150}/>
             <div className="relative max-w-5xl m-auto">
                 <div className="flex flex-col justify-center items-center w-full bg-white pt-10">
-                    <Image priority
+                    <Image
                            src={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}images/hearth-with-leafs.svg`}
                            height={55}
                            width={190}
                            alt=""/>
                 </div>
                 <div className="absolute left-1/2 -translate-x-1/2 top-[73px]">
-                    <Image priority
+                    <Image
                            src={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}images/arrow-hearth.svg`}
                            height={26}
                            width={24}
@@ -76,7 +76,7 @@ const Index = () => {
                     ASISTENCIA </Link>
             </div>
             <div className="flex flex-col items-center w-full bg-white pt-10 pb-12 max-w-5xl m-auto">
-                <Image priority
+                <Image
                        src={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}images/flags.svg`}
                        height={95}
                        width={220}

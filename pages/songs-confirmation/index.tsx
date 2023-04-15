@@ -19,7 +19,7 @@ const Index = () => {
             backgroundRepeat: 'repeat'
         }}>
             <NavigationHeader/>
-            <div className="min-h-[calc(100vh-168px)] lg:min-h-[calc(100vh-112px)] max-w-5xl m-auto bg-white lg:text-base px-6">
+            <div className="min-h-[calc(100vh-112px)] max-w-5xl m-auto bg-white lg:text-base px-6">
                 <div className="lg:pt-14">
                     <HeaderImage imageSrc={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}images/flower.svg`}
                                  imageAlt={'Imagen de una flor'}
@@ -34,7 +34,7 @@ const Index = () => {
                     ¡Esperamos que lo des todo en la pista de baile!
                 </p>
                 <div className="flex flex-col items-center w-full bg-white pt-16 pb-6 max-w-5xl m-auto">
-                    <Image priority
+                    <Image
                            src={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}images/women-dancing.svg`}
                            height={isMobile ? 240 : 360}
                            width={isMobile ? 224: 336}

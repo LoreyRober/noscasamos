@@ -19,7 +19,7 @@ export const Presentation = (): JSX.Element => {
             <div className="relative w-full pb-[100%] mt-6 lg:flex-col lg:mt-12 lg:pb-[95%]">
             { isMobile ? (
 
-                    <Image priority
+                    <Image
                            src={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}images/couple-image.svg`}
                            alt={'Imagen de Roberto y Lorena posando to rexulones'}
                            style={{ objectFit: 'cover' }}
@@ -27,7 +27,7 @@ export const Presentation = (): JSX.Element => {
                            />
             ) : (
                 <>
-                    <Image priority
+                    <Image
                            src={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}images/couple-image-large.svg`}
                            alt={'Imagen de Roberto y Lorena posando to rexulones'}
                            style={{ objectFit: 'cover' }}
@@ -40,13 +40,13 @@ export const Presentation = (): JSX.Element => {
                     <div className="absolute left-1/2 -translate-x-1/2 top-[-90px]
                     lg:static lg:-translate-x-0 lg:flex lg:justify-center">
                         {isMobile ? (
-                            <Image priority
+                            <Image
                                    src={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}images/date-rings.svg`}
                                    height={180}
                                    width={180}
                                    alt="Anillos entrelazados"/>
                         ) : (
-                            <Image priority
+                            <Image
                                    src={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}images/date-rings-large.svg`}
                                    height={108}
                                    width={150}
@@ -70,11 +70,13 @@ export const Presentation = (): JSX.Element => {
                         </Link>
                         {isMobile && (
                         <div className="flex flex-row justify-between items-center absolute w-full">
-                            <Image src={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}images/flowers-left.svg`}
+                            <Image
+                                   src={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}images/flowers-left.svg`}
                                    alt="Flores de colores"
                                    width={106}
                                    height={163}/>
-                            <Image src={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}images/flowers-right.svg`}
+                            <Image
+                                   src={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}images/flowers-right.svg`}
                                  alt="Flores de colores"
                                  width={88}
                                  height={159}/>

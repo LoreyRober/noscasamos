@@ -6,7 +6,7 @@ export const Footer = (): JSX.Element => {
             <div className="p-8">
                 <p className="flex flex-row justify-center tracking-widest text-sm leading-6">
                     <span className="pr-2">LORENA</span>
-                    <Image priority
+                    <Image
                            src={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}icons/rings-white.svg`}
                            height={24}
                            width={50}

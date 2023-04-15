@@ -41,7 +41,7 @@ const Index = () => {
             backgroundRepeat: 'repeat'
         }}>
             <NavigationHeader/>
-            <div className="min-h-[calc(100vh-168px)] lg:min-h-[calc(100vh-112px)] max-w-5xl m-auto bg-white lg:text-base">
+            <div className="min-h-[calc(100vh-112px)] max-w-5xl m-auto bg-white lg:text-base">
                 <div className="lg:pt-14">
                     <HeaderImage imageSrc={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}images/date-rings-large.svg`}
                                  imageAlt={'Anillos de boda entrelazados'}
@@ -75,7 +75,7 @@ const Index = () => {
                         </div>
                     </form>
                     <div className="pb-4 mt-[-16px] lg:mt-[-48px] lg:ml-[-148px]">
-                        <Image priority
+                        <Image
                                src={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}images/disco-dancing.svg`}
                                height={isMobile ? 233 : 410}
                                width={isMobile ? 272 : 477}

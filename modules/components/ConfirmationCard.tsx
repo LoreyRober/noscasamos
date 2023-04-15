@@ -8,7 +8,7 @@ export const ConfirmationCard = (): JSX.Element => {
              className='p-4 mt-9 font-bold tracking-widest text-sm leading-6 bg-primary-brown text-white lg:mt-20'>
               CONFIRMAR ASISTENCIA
           </Link>
-          <Image priority
+          <Image
                  className='pt-7 pb-10 lg:pt-10 lg:pb-20'
                  src={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}images/envelope.svg`}
                  height={92}

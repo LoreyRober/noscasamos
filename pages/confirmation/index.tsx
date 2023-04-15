@@ -78,7 +78,7 @@ const Index = (): JSX.Element => {
             backgroundRepeat: 'repeat'
         }}>
             <NavigationHeader/>
-            <div className="min-h-[calc(100vh-168px)] lg:min-h-[calc(100vh-112px)] max-w-5xl m-auto bg-white">
+            <div className="min-h-[calc(100vh-112px)] max-w-5xl m-auto bg-white">
                 <div className="lg:pt-14">
                     <HeaderImage imageSrc={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}images/date-rings-large.svg`}
                                  imageAlt={'Anillos entrelazados'}

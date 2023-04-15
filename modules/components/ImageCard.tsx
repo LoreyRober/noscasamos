@@ -12,6 +12,7 @@ export const ImageCard = ({imageSrc, srcUrl, imageAlt, title, subtitle}: Props):
   return (
       <section className='relative w-full pb-[100%] mt-[-12px] lg:pb-[45%]'>
           <Image
+              priority
               src={imageSrc}
               alt={imageAlt}
               style={{objectFit: 'cover'}}

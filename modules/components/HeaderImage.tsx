@@ -11,7 +11,7 @@ interface Props {
 const HeaderImage = ({ imageSrc, imageAlt, text, height, width}: Props) => {
     return (
         <header className="flex bg-white flex-col m-auto items-center w-full max-w-5xl mt-14 pt-6">
-            <Image priority
+            <Image
                    src={imageSrc}
                    height={height}
                    width={width}

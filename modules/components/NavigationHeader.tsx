@@ -44,7 +44,7 @@ export const NavigationHeader = (): JSX.Element => {
                 <h1>
                     <Link href="/" className="flex font-normal text-sm leading-6">
                         <span className="pr-2">LORENA</span>
-                        <Image priority
+                        <Image
                                src={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}icons/rings-white.svg`}
                                height={24}
                                width={50}
@@ -59,12 +59,12 @@ export const NavigationHeader = (): JSX.Element => {
                                     onClick={handleClick}
                                     disabled={isAnimating}>
                                 {isOpen ?
-                                    <Image priority
+                                    <Image
                                            src={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}icons/icon_close.svg`}
                                            height={24}
                                            width={25}
                                            alt="Anillos entrelazados"/> :
-                                    <Image priority
+                                    <Image
                                            src={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}icons/burger-menu.svg`}
                                            height={24}
                                            width={25}
