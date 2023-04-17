@@ -50,16 +50,16 @@ const Index = () => {
                                  width={150}/>
                 </div>
                 <div className="px-6 lg:px-44 relative">
-                    <h3 className="tracking-widest pt-10 text-sm">
+                    <h3 className="tracking-widest pt-10 ">
                         ¿QUÉ TE GUSTARÍA QUE SONARA EN LA FIESTA?
                     </h3>
                     <form onSubmit={handleSubmit}
                           className="flex flex-col">
-                        <label className="text-sm text-primary-brown pt-4 z-10"
+                        <label className=" text-primary-brown pt-4 z-10"
                                htmlFor="songs">
                             Escribe aquí tus peticiones para el DJ
                         </label>
-                        <textarea className="z-10 bg-light-grey border border-primary-grey text-sm italic p-3 mt-2"
+                        <textarea className="z-10 bg-light-grey border border-primary-grey  italic p-3 mt-2"
                                   id="songs"
                                   name="songs"
                                   rows={4}
@@ -68,7 +68,7 @@ const Index = () => {
                                   placeholder="¿Qué canciones hacen que te levantes para darlo todo o que te quedes afónico cantando?"/>
 
                         <div className="flex justify-end">
-                            <button className="py-3 px-10 mt-8 font-bold tracking-widest text-sm leading-6 bg-primary-brown text-white"
+                            <button className="py-3 px-10 mt-8 font-bold tracking-widest  leading-6 bg-primary-brown text-white"
                                     type="submit"
                                     disabled={hasSubmit}>ENVIAR
                             </button>

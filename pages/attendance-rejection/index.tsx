@@ -27,7 +27,7 @@ const Index = () => {
                                  height={80}
                                  width={220}/>
                 </div>
-                <p className="text-center tracking-widest pt-6 text-sm">
+                <p className="text-center tracking-widest pt-6 ">
                     Seguro que hay más momentos en los que podamos compartir alegrías juntos.
                 </p>
                 <p className="text-center tracking-widest pt-6">

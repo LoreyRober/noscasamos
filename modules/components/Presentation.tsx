@@ -58,14 +58,14 @@ export const Presentation = (): JSX.Element => {
                     <h1 className="flex flex-col items-center text-5xl font-fantasy pt-8 z-10 lg:pt-16 lg:text-6xl">
                         Lorena y Roberto
                     </h1>
-                    <p className="flex flex-col items-center tracking-widest text-sm leading-6 pt-8 lg:pt-24 lg:text-xl">
+                    <p className="flex flex-col items-center tracking-widest  leading-6 pt-8 lg:pt-24 lg:text-xl">
                         Nos casamos en...
                     </p>
                     <div className="border-y-2 border-y-primary-brown mx-6 mt-4 lg:mt-6 lg:mx-16">
                         <CountdownTimer date={new Date('2023-09-23T12:30:00')}/>
                     </div>
                     <div className="flex flex-col items-center p-10 relative lg:pt-12">
-                        <Link href="/confirmation" className="flex flex-col items-center tracking-widest text-sm text-white leading-6 p-4 bg-primary-brown z-10">
+                        <Link href="/confirmation" className="flex flex-col items-center tracking-widest  text-white leading-6 p-4 bg-primary-brown z-10">
                             CONFIRMAR ASISTENCIA
                         </Link>
                         {isMobile && (

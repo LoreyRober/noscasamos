@@ -67,12 +67,12 @@ const Index = () => {
                                         textPosition={'right'}/>
                 </div>
             </div>
-            <p className="text-center bg-white text-sm tracking-widest px-6 pt-16 max-w-5xl m-auto">¡Acompáñanos
+            <p className="text-center bg-white  tracking-widest px-6 pt-16 max-w-5xl m-auto">¡Acompáñanos
                 en el siguiente gran evento de nuestras vidas!
             </p>
             <div className="flex flex-col items-center w-full bg-white max-w-5xl m-auto">
                 <Link href="/confirmation"
-                      className="p-4 mt-9 font-bold tracking-widest text-sm leading-6 bg-primary-brown text-white"> CONFIRMAR
+                      className="p-4 mt-9 font-bold tracking-widest  leading-6 bg-primary-brown text-white"> CONFIRMAR
                     ASISTENCIA </Link>
             </div>
             <div className="flex flex-col items-center w-full bg-white pt-10 pb-12 max-w-5xl m-auto">

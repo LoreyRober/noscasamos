@@ -90,17 +90,17 @@ const Index = (): JSX.Element => {
                       method="post"
                       onSubmit={handleOnSubmit}>
                     <h2 className="tracking-widest leading-6">DÉJANOS TUS DATOS</h2>
-                    <label className="text-sm text-primary-brown pt-4"
+                    <label className=" text-primary-brown pt-4"
                            htmlFor="name">Nombre y apellidos
                     </label>
-                    <input className="bg-light-grey border border-primary-grey text-sm italic p-3 mt-2"
+                    <input className="bg-light-grey border border-primary-grey  italic p-3 mt-2"
                            type="text"
                            id="name"
                            name="name"
                            required
                            placeholder={namePlaceholder}/>
                     <fieldset>
-                        <legend className="text-sm text-primary-brown pt-8">¿Vas a asistir a nuestra boda?</legend>
+                        <legend className=" text-primary-brown pt-8">¿Vas a asistir a nuestra boda?</legend>
                         <div className="pt-4">
                             <input type="radio"
                                    id="isComing"
@@ -108,7 +108,7 @@ const Index = (): JSX.Element => {
                                    value="true"
                                    required
                                    onClick={handleIsComingChange}/>
-                            <label className="text-sm pl-2"
+                            <label className=" pl-2"
                                    htmlFor="isComing">¡Por supuesto! 🤩
                             </label>
                         </div>
@@ -119,14 +119,14 @@ const Index = (): JSX.Element => {
                                    value="false"
                                    required
                                    onClick={handleIsComingChange}/>
-                            <label className="text-sm pl-2"
+                            <label className=" pl-2"
                                    htmlFor="isNotComing">Lo siento, pero no puedo. 😢
                             </label>
                         </div>
                     </fieldset>
                     {isComing && (<>
                         <fieldset>
-                            <legend className="text-sm text-primary-brown pt-8">¿Vienes con alguien más?</legend>
+                            <legend className=" text-primary-brown pt-8">¿Vienes con alguien más?</legend>
                             <div className="pt-4">
                                 <input type="radio"
                                        id="hasCompanions"
@@ -134,7 +134,7 @@ const Index = (): JSX.Element => {
                                        value="true"
                                        required={isComing}
                                        onClick={handleHasCompanionsChange}/>
-                                <label className="text-sm pl-2"
+                                <label className=" pl-2"
                                        htmlFor="hasCompanions">Sí
                                 </label>
                             </div>
@@ -145,16 +145,16 @@ const Index = (): JSX.Element => {
                                        value="false"
                                        required={isComing}
                                        onClick={handleHasCompanionsChange}/>
-                                <label className="text-sm pl-2"
+                                <label className=" pl-2"
                                        htmlFor="doesNotHaveCompanions">No
                                 </label>
                             </div>
                         </fieldset>
                         {hasCompanions && (<>
-                            <label className="text-sm text-primary-brown pt-8"
+                            <label className=" text-primary-brown pt-8"
                                    htmlFor="companionsNumber">¿Cuánta gente vendra contigo?
                             </label>
-                            <select className="bg-light-grey border border-primary-grey text-sm italic p-3 mt-2"
+                            <select className="bg-light-grey border border-primary-grey  italic p-3 mt-2"
                                     id="companionsNumber"
                                     name="companionsNumber"
                                     onChange={handleNumberOfCompanions}
@@ -172,11 +172,11 @@ const Index = (): JSX.Element => {
                             {(companionsArray.length > 1) ? companionsArray.map((companion, index) => (
                                 <div className="pt-8"
                                      key={`companionName${index}`}>
-                                    <label className="text-sm text-primary-brown"
+                                    <label className=" text-primary-brown"
                                            htmlFor={`companionName${index}`}>Nombre y apellidos
                                         del {companion} acompañante
                                     </label>
-                                    <input className="bg-light-grey w-full border border-primary-grey text-sm italic p-3 mt-2"
+                                    <input className="bg-light-grey w-full border border-primary-grey  italic p-3 mt-2"
                                            type="text"
                                            required={hasCompanions}
                                            id={`companionName${index}`}
@@ -185,10 +185,10 @@ const Index = (): JSX.Element => {
                                 </div>
                             )) : companionsArray.length !== 0 && (
                                 <div className="pt-8">
-                                    <label className="text-sm text-primary-brown"
+                                    <label className=" text-primary-brown"
                                            htmlFor={`companionName0`}>Nombre y apellidos del acompañante
                                     </label>
-                                    <input className="bg-light-grey w-full border border-primary-grey text-sm italic p-3 mt-2"
+                                    <input className="bg-light-grey w-full border border-primary-grey  italic p-3 mt-2"
                                            type="text"
                                            required={hasCompanions}
                                            id={`companionName0`}
@@ -199,14 +199,14 @@ const Index = (): JSX.Element => {
 
                         </>)}
 
-                        <label className="text-sm text-primary-black pt-8"
+                        <label className=" text-primary-black pt-8"
                                htmlFor="suggestions">¿TIENES ALGUNA PETICIÓN ESPECIAL?
                         </label>
-                        <label className="text-sm text-dark-grey pt-4"
+                        <label className=" text-dark-grey pt-4"
                                htmlFor="suggestions">¿Tienes alergias? ¿Eres vegano? ¿Prefieres un menú infantil?...
                             Déjanos aquí un comentario para tenerlo en cuenta
                         </label>
-                        <textarea className="bg-light-grey border border-primary-grey text-sm italic p-3 mt-2"
+                        <textarea className="bg-light-grey border border-primary-grey  italic p-3 mt-2"
                                   id="suggestions"
                                   name="suggestions"
                                   rows={4}
@@ -214,7 +214,7 @@ const Index = (): JSX.Element => {
                                   placeholder="Escribe aquí lo que necesites..."/>
                     </>)}
                     <div className="flex justify-end">
-                        <button className="py-3 px-10 mt-8 mb-12 font-bold tracking-widest text-sm leading-6 bg-primary-brown text-white"
+                        <button className="py-3 px-10 mt-8 mb-12 font-bold tracking-widest  leading-6 bg-primary-brown text-white"
                                 type="submit"
                                 disabled={hasSubmit}>ENVIAR
                         </button>

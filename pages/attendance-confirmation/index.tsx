@@ -29,16 +29,16 @@ const Index = () => {
                                  height={80}
                                  width={220}/>
                 </div>
-                <p className="text-center tracking-widest pt-6 text-sm">
+                <p className="text-center tracking-widest pt-6 ">
                     Nos alegra mucho que compartas este día con nosotros. Y como queremos que sea una fiesta para
                     recordar...
                 </p>
-                <p className="text-center tracking-widest pt-6 text-sm">
+                <p className="text-center tracking-widest pt-6 ">
                     ¿Qué te gustaría que sonara en la pista de baile?
                 </p>
                 <div className="flex flex-col items-center w-full bg-white max-w-5xl m-auto pt-10">
                     <Link href="/songs"
-                          className="font-bold tracking-widest text-sm leading-6 bg-primary-brown text-white p-4"> SUGERIR
+                          className="font-bold tracking-widest  leading-6 bg-primary-brown text-white p-4"> SUGERIR
                         TEMAZOS </Link>
                 </div>
                 <div className="flex flex-col items-center w-full bg-white pt-4 pb-6 max-w-5xl m-auto">

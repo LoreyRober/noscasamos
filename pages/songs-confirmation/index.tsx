@@ -27,7 +27,7 @@ const Index = () => {
                                  height={80}
                                  width={220}/>
                 </div>
-                <p className="text-center tracking-widest pt-6 text-sm">
+                <p className="text-center tracking-widest pt-6 ">
                     Pasaremos una lista de canciones preferidas de los invitados al DJ para que todos disfrutemos de la fiesta.
                 </p>
                 <p className="text-center tracking-widest pt-6">

@@ -18,12 +18,12 @@ const CountdownTimer = ({ date }: Props) => {
 
         if (completed) {
             return (
-                <p className="flex flex-row gap-2 justify-center tracking-widest text-sm leading-6 py-4 lg:py-0">
+                <p className="flex flex-row gap-2 justify-center tracking-widest  leading-6 py-4 lg:py-0">
                     ¡La boda ha comenzado!</p>
             )
         } else {
             return (
-                <p className="flex flex-row flex-wrap gap-2 justify-center tracking-widest text-sm leading-6 py-4">
+                <p className="flex flex-row flex-wrap gap-2 justify-center tracking-widest  leading-6 py-4">
                     <span className="font-bold tabular-nums">{days}</span> días
                     <span className="font-bold tabular-nums">{hours}</span> horas
                     <span className="font-bold tabular-nums">{minutes}</span> minutos

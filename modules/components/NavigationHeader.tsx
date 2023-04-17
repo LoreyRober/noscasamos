@@ -42,7 +42,7 @@ export const NavigationHeader = (): JSX.Element => {
         <header className="fixed z-20 w-full top-0 flex flex-row justify-center bg-black text-white pl-6 py-4 lg:px-20">
             <div className="flex w-full flex-row justify-between max-w-5xl">
                 <h1>
-                    <Link href="/" className="flex font-normal text-sm leading-6">
+                    <Link href="/" className="flex font-normal  leading-6">
                         <span className="pr-2">LORENA</span>
                         <Image
                                src={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}icons/rings-white.svg`}
@@ -76,26 +76,26 @@ export const NavigationHeader = (): JSX.Element => {
                                 isOpen ?
                                     'fixed z-10 top-14 w-2/3 h-full bg-black transition duration-300 ease-out' :
                                     'fixed z-10 top-14 w-2/3 h-full bg-black transition duration-300 ease-in scale-x-0 translate-x-full'}>
-                                <div className={`flex flex-col tracking-widest text-sm leading-6 px-4 pt-10 ${router.pathname === '/' && 'font-bold underline'}`}>
+                                <div className={`flex flex-col tracking-widest  leading-6 px-4 pt-10 ${router.pathname === '/' && 'font-bold underline'}`}>
                                     <Link href="/">¡BIENVENIDOS!</Link>
                                 </div>
-                                <div className={`flex flex-col tracking-widest text-sm leading-6 px-4 pt-6 ${router.pathname === '/about-us' && 'font-bold underline'}`}>
+                                <div className={`flex flex-col tracking-widest  leading-6 px-4 pt-6 ${router.pathname === '/about-us' && 'font-bold underline'}`}>
                                     <Link href="/about-us">SOBRE NOSOTROS</Link>
                                 </div>
-                                <div className={`flex flex-col tracking-widest text-sm leading-6 px-4 pt-6 ${router.pathname === '/confirmation' && 'font-bold underline'}`}>
+                                <div className={`flex flex-col tracking-widest  leading-6 px-4 pt-6 ${router.pathname === '/confirmation' && 'font-bold underline'}`}>
                                     <Link href="/confirmation">CONFIRMAR ASISTENCIA</Link>
                                 </div>
-                                <div className={`flex flex-col tracking-widest text-sm leading-6 px-4 pt-6 ${router.pathname === '/songs' && 'font-bold underline'}`}>
+                                <div className={`flex flex-col tracking-widest  leading-6 px-4 pt-6 ${router.pathname === '/songs' && 'font-bold underline'}`}>
                                     <Link href="/songs">PIDE TUS TEMAZOS</Link>
                                 </div>
-                                {/*<div className={`flex flex-col tracking-widest text-sm leading-6 px-4 pt-6 ${router.pathname === '/songs' && 'font-bold underline'}`>*/}
+                                {/*<div className={`flex flex-col tracking-widest  leading-6 px-4 pt-6 ${router.pathname === '/songs' && 'font-bold underline'}`>*/}
                                 {/*    <Link href="">COMPARTE TUS FOTOS</Link>*/}
                                 {/*</div>*/}
                             </nav>
                         </div>
                     ) :
                     (
-                        <nav className="flex space-x-6 leading-6 text-sm text-white">
+                        <nav className="flex space-x-6 leading-6  text-white">
                                 <Link href="/" className={`${router.pathname === '/' && 'font-bold underline'}`}>¡BIENVENIDOS!</Link>
                                 <Link href="/about-us" className={`${router.pathname === '/about-us' && 'font-bold underline'}`}>SOBRE NOSOTROS</Link>
                                 <Link href="/confirmation" className={`${router.pathname === '/confirmation' && 'font-bold underline'}`}>CONFIRMAR ASISTENCIA</Link>
