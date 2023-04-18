@@ -13,7 +13,6 @@ export const NavigationHeader = (): JSX.Element => {
     const hasArrivedToMaxWith = useMediaQuery("(max-width: 1023px)");
 
     const handleClick = (event: SyntheticEvent) => {
-        event.preventDefault();
         setIsOpen(!isOpen);
         setIsAnimating(true);
         setTimeout(() => setIsAnimating(false), 300);
@@ -80,7 +79,7 @@ export const NavigationHeader = (): JSX.Element => {
                                     <Link href="/">¡BIENVENIDOS!</Link>
                                 </div>
                                 <div className={`flex flex-col tracking-widest  leading-6 px-4 pt-6 ${router.pathname === '/about-us' && 'font-bold underline'}`}>
-                                    <Link href="/about-us">SOBRE NOSOTROS</Link>
+                                    <Link href="/#about-us" onClick={handleClick}>SOBRE NOSOTROS</Link>
                                 </div>
                                 <div className={`flex flex-col tracking-widest  leading-6 px-4 pt-6 ${router.pathname === '/confirmation' && 'font-bold underline'}`}>
                                     <Link href="/confirmation">CONFIRMAR ASISTENCIA</Link>
@@ -97,7 +96,7 @@ export const NavigationHeader = (): JSX.Element => {
                     (
                         <nav className="flex space-x-6 leading-6  text-white">
                                 <Link href="/" className={`${router.pathname === '/' && 'font-bold underline'}`}>¡BIENVENIDOS!</Link>
-                                <Link href="/about-us" className={`${router.pathname === '/about-us' && 'font-bold underline'}`}>SOBRE NOSOTROS</Link>
+                                <Link href="/#about-us" className={`${router.pathname === '/about-us' && 'font-bold underline'}`}>SOBRE NOSOTROS</Link>
                                 <Link href="/confirmation" className={`${router.pathname === '/confirmation' && 'font-bold underline'}`}>CONFIRMAR ASISTENCIA</Link>
                                 <Link href="/songs" className={`${router.pathname === '/songs' && 'font-bold underline'}`}>PIDE TUS TEMAZOS</Link>
                                 {/*<Link href="">COMPARTE TUS FOTOS</Link>*/}

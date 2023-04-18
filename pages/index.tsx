@@ -1,7 +1,10 @@
+import AboutUs from '@/modules/components/AboutUs';
 import { ConfirmationCard } from '@/modules/components/ConfirmationCard';
+import Gift from '@/modules/components/Gift';
 import { ImageCard } from '@/modules/components/ImageCard';
 import { NavigationHeader } from '@/modules/components/NavigationHeader';
 import { Presentation } from '@/modules/components/Presentation';
+import SongsSugestions from '@/modules/components/SongsSugestions';
 import { WelcomeTextCard } from '@/modules/components/WelcomeTextCard';
 import bg from '@/public/images/tile-background.png';
 import Head from 'next/head'
@@ -28,6 +31,7 @@ export default function Home() {
                         <NavigationHeader/>
                         <Presentation/>
                         <WelcomeTextCard/>
+                        <AboutUs/>
                         <div className='w-full flex flex-col lg:flex-row'>
                             <ImageCard
                                 imageSrc={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}images/castle.svg`}
@@ -43,6 +47,8 @@ export default function Home() {
                                 subtitle='14:00 - Lume & Co'/>
                         </div>
                         <ConfirmationCard/>
+                        <Gift/>
+                        <SongsSugestions/>
                     </div>
                 </main>
             </div>

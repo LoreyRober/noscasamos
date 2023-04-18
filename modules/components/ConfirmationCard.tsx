@@ -1,19 +1,13 @@
-import Image from 'next/image';
 import Link from 'next/link';
 
 export const ConfirmationCard = (): JSX.Element => {
   return (
-      <section className='flex flex-col items-center w-full bg-white'>
+      <section className='flex flex-col mt-[-1px] px-6 py-10 bg-white-with-opacity items-center w-full bg-white'>
+          <p className='text-xl'>¿Qué dices? ¿Te apuntas?</p>
           <Link href='/confirmation'
-             className='p-4 mt-9 font-bold tracking-widest  leading-6 bg-primary-brown text-white lg:mt-20'>
+             className='p-4 mt-6 font-bold tracking-widest leading-6 bg-primary-brown text-white'>
               CONFIRMAR ASISTENCIA
           </Link>
-          <Image
-                 className='pt-7 pb-10 lg:pt-10 lg:pb-20'
-                 src={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}images/envelope.svg`}
-                 height={92}
-                 width={76}
-                 alt="Anillos entrelazados"/>
       </section>
   )
 }
