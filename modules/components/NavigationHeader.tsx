@@ -1,8 +1,8 @@
 import { useMediaQuery } from '@react-hook/media-query';
+import Image from 'next/image';
+import Link from 'next/link'
 import { useRouter } from 'next/router';
 import { SyntheticEvent, useEffect, useRef, useState } from 'react';
-import Link from 'next/link'
-import Image from 'next/image';
 
 export const NavigationHeader = (): JSX.Element => {
     const router = useRouter();

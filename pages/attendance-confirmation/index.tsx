@@ -2,8 +2,8 @@ import HeaderImage from '@/modules/components/HeaderImage';
 import { NavigationHeader } from '@/modules/components/NavigationHeader';
 import bg from '@/public/images/tile-background.png';
 import { useMediaQuery } from '@react-hook/media-query';
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 const Index = () => {

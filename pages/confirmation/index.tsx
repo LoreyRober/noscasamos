@@ -1,9 +1,9 @@
 import { addGuest, Guest } from '@/firebase/client';
 import HeaderImage from '@/modules/components/HeaderImage';
 import { NavigationHeader } from '@/modules/components/NavigationHeader';
-import React, { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
 import bg from '@/public/images/tile-background.png';
+import { useRouter } from 'next/router';
+import React, { useEffect, useState } from 'react';
 
 const Index = (): JSX.Element => {
     const router = useRouter()

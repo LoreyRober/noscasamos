@@ -1,5 +1,5 @@
 import React from 'react';
-import Countdown, { formatTimeDelta } from 'react-countdown';
+import Countdown from 'react-countdown';
 
 interface Props {
     date: Date;

@@ -3,9 +3,9 @@ import HeaderImage from '@/modules/components/HeaderImage';
 import { NavigationHeader } from '@/modules/components/NavigationHeader';
 import bg from '@/public/images/tile-background.png';
 import { useMediaQuery } from '@react-hook/media-query';
-import { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 
 const Index = () => {
     const router = useRouter()

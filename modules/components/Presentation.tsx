@@ -1,7 +1,7 @@
+import { useMediaQuery } from '@react-hook/media-query';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useMediaQuery } from '@react-hook/media-query';
 import { useEffect, useState } from 'react';
 
 const CountdownTimer = dynamic(() => import('@/modules/components/CountdownTimer'), { ssr: false });
