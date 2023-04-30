@@ -20,7 +20,7 @@ export const Presentation = (): JSX.Element => {
             { isMobile ? (
 
                     <Image
-                           src={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}images/couple-image.svg`}
+                           src={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}images/couple-image.jpg`}
                            alt={'Imagen de Roberto y Lorena posando to rexulones'}
                            style={{ objectFit: 'cover' }}
                            fill
@@ -28,7 +28,7 @@ export const Presentation = (): JSX.Element => {
             ) : (
                 <>
                     <Image
-                           src={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}images/couple-image-large.svg`}
+                           src={`${process.env.NEXT_PUBLIC_IMAGES_ROUTE}images/couple-image.jpg`}
                            alt={'Imagen de Roberto y Lorena posando to rexulones'}
                            style={{ objectFit: 'cover' }}
                            fill/>
